@@ -5,6 +5,8 @@ a {
 body {
   font-family: Poppins, "Courier New", Courier, monospace;
   color: black;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 * {
