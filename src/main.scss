@@ -1,0 +1,928 @@
+$pageblue: #459af7;
+$pagered: #ff015b;
+$pagepurple: #4c64e5;
+$pagelightgreen: #08bf98;
+$textgraydark: #a5a5a5;
+$textgraylight: #cfcdcd;
+$backgroundgray: #e8eff7;
+$backgroundwhite: white;
+$pageyellow: #c9b500;
+a{
+  text-decoration: none;
+}
+body {
+  font-family: Poppins, "Courier New", Courier, monospace;
+  color: black;
+}
+* {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  transition: 0.2s;
+  user-select: none; /* Standard */
+  color: black;
+
+}
+::placeholder {
+  color: $textgraylight;
+}
+.login-cont {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+.login-left {
+  background-color: white;
+  height: 100%;
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .title-cont {
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+  }
+  .form-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.1em;
+    }
+    p {
+      font-size: 0.8rem;
+      font-weight: 500;
+      span {
+        color: $pagepurple;
+      }
+    }
+  }
+  .form-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+    div {
+      width: 100%;
+      max-width: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-self: center;
+      p {
+        font-size: 0.6rem;
+        color: $textgraydark;
+        font-weight: 500;
+      }
+      .lower {
+        color: $textgraylight;
+        font-size: 0.5rem;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background: $backgroundgray;
+        width: 100%;
+        border-radius: 0.8rem;
+
+        input {
+          width: 100%;
+
+          padding: 0.8rem;
+          background: transparent;
+          border: none;
+          margin-left: 0.8rem;
+          font-weight: 600;
+          color: $textgraydark;
+          :focus {
+            outline: none;
+          }
+        }
+        .visibility {
+          background: transparent;
+          border: none;
+          text-decoration: none;
+          margin-right: 1rem;
+          :hover {
+            background: none;
+          }
+        }
+      }
+    }
+  }
+}
+.left-body {
+  flex: 0.74;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.signin-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  div {
+    width: 100%;
+    border-radius: 0.8rem;
+    text-align: center;
+    background-color: $pagered;
+    padding: 0.5rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+
+    color: $backgroundgray;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0.3rem;
+  }
+  a {
+    color: $backgroundgray;
+    text-decoration: none;
+    width: 32%;
+  }
+  div:hover {
+    opacity: 0.85;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  div:active {
+    opacity: 0.4;
+  }
+  p {
+    font-size: 0.6rem;
+    color: $textgraylight;
+    font-weight: 500;
+    span {
+      color: $pageblue;
+    }
+  }
+}
+.loginbuttons {
+  height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  .button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 1rem;
+    div {
+      height: 60px;
+      width: 90px;
+      display: grid;
+      place-items: center;
+      border: 1px solid $textgraylight;
+      border-radius: 1rem;
+      cursor: pointer;
+    }
+    div:hover {
+      opacity: 0.85;
+    }
+    div:active {
+      opacity: 0.4;
+    }
+  }
+}
+
+.title {
+  color: #000;
+  font-size: 1.5rem;
+  span {
+    color: $pagepurple;
+  }
+}
+
+.login-right {
+  background-color: $pageblue;
+  height: 100%;
+  flex: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .image {
+    height: 50vh;
+    width: 50%;
+    display: grid;
+    place-items: center;
+  }
+  ul {
+    list-style: none;
+    text-align: center;
+    color: white;
+    li {
+      margin: 0.3rem;
+    }
+  }
+}
+.contwith {
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .line {
+    height: 1.45px;
+    background: $textgraydark;
+    flex: 0.4;
+  }
+  span {
+    font-size: 0.8rem;
+    color: $textgraylight;
+    font-weight: 500;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.dashboard {
+  background: $backgroundgray;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.5rem;
+  background-color: $backgroundwhite;
+  .title {
+    padding-left: 1rem;
+  }
+  .header-right {
+    flex: 0.26;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .circlebutton:hover {
+      opacity: 0.7;
+    }
+    .circlebutton:active {
+      opacity: 0.4;
+    }
+    .circlebutton {
+      height: 2.2rem;
+      width: 2.2rem;
+      border-radius: 50%;
+      background: $backgroundgray;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+
+      overflow: hidden;
+
+      img {
+        height: 2.2rem;
+        border-radius: 50%;
+      }
+    }
+    .header-profile:hover {
+      opacity: 0.7;
+    }
+
+    .header-profile:active {
+      opacity: 0.4;
+    }
+    .header-profile {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      cursor: pointer;
+
+      .circlebutton {
+        background-image: url("https://assets.teenvogue.com/photos/5b437a59330f9550cdec8636/16:9/w_2560%2Cc_limit/lede.jpg");
+        background-position: center;
+        background-size: auto 100%;
+      }
+
+      .profile-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-right: 2rem;
+
+        padding-left: 4px;
+        p {
+          font-weight: 600;
+          font-size: 0.8rem;
+        }
+        .profile-data-upper {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          align-items: center;
+          p {
+            font-size: 0.5rem;
+            color: $textgraylight;
+          }
+        }
+      }
+    }
+  }
+}
+.dashboard-body {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.outerflex-left {
+  flex: 0.2;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    padding: 10px;
+    padding-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 800;
+    width: 100%;
+    text-align: start;
+  }
+  .left-upper {
+    background-color: $backgroundwhite;
+    flex: 0.7;
+    margin: 1rem;
+    margin-left: 2rem;
+    border-radius: 1rem;
+    max-width: 200px;
+    min-width: 184px;
+    padding-bottom: 0.5rem;
+    max-height: 430px;
+  }
+  .left-lower {
+    background-color: $backgroundwhite;
+    margin: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    max-width: 200px;
+    min-width: 184px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0.25;
+    padding: 0.3rem;
+
+    h3 {
+      padding-bottom: 0;
+
+      margin-left: 1rem;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 90%;
+      flex: 1;
+      margin-left: 1rem;
+      margin-right: 1rem;
+
+      p {
+        text-align: left;
+        width: 100%;
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+      .content-lower {
+        font-size: 0.5rem;
+        text-align: end;
+        color: $textgraydark;
+      }
+      .bar {
+        flex-basis: 90%;
+        height: 0.3rem;
+        display: flex;
+        background-color: $textgraydark;
+        margin: 5px;
+        border-radius: 0.15rem;
+        margin-right: 1rem;
+
+        div {
+          flex-basis: 70%;
+          background-color: $pagered;
+          border-radius: 0.15rem;
+        }
+      }
+    }
+  }
+}
+.outerflex-right {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 1rem;
+}
+
+.innerflex-lower {
+  flex: 0.9;
+  display: flex;
+  flex-direction: row;
+
+  .lower-left {
+    transform: translateY(-1rem);
+    flex: 0.7;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    > p {
+      font-size: 0.8rem;
+      color: $textgraydark;
+      margin-bottom: 0.7rem;
+    }
+    .post {
+      border-radius: 1rem;
+      background-color: $backgroundwhite;
+      min-height: 150px;
+      margin-bottom: 1rem;
+      margin-right: 2rem;
+    }
+  }
+  .lower-right {
+    flex: 0.4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    .right-data {
+      border-radius: 1rem;
+
+      width: 100%;
+      background-color: $backgroundwhite;
+    }
+  }
+}
+
+.account {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #dfdfdf;
+  padding: 7px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin: 0.3rem;
+  margin-bottom: 0.4rem;
+  border-radius: 0.7rem;
+
+  .circlesvg {
+    border-radius: 50%;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    background: white;
+    height: 1.3rem;
+    width: 1.3rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding-left: 0.7rem;
+    flex: 1;
+    text-align: start;
+  }
+}
+.tick {
+  height: 0.9rem;
+  width: 0.9rem;
+  background: $backgroundgray;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.bggreen {
+  background-color: $pagelightgreen;
+}
+
+.multilist {
+  list-style: none;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.3rem;
+  li {
+    width: 100%;
+  }
+  p {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    div {
+      margin-right: 0.3rem;
+      height: 1rem;
+      width: 1rem;
+    }
+  }
+  ul {
+    list-style: none;
+    font-size: 0.6rem;
+    padding-left: 1.5rem;
+    p {
+      div {
+        height: 0.8rem;
+        width: 0.8rem;
+      }
+    }
+  }
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  .post-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .post-topleft {
+      display: flex;
+      .post-img {
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        background-image: url("https://assets.teenvogue.com/photos/5b437a59330f9550cdec8636/16:9/w_2560%2Cc_limit/lede.jpg");
+        background-position: center;
+        background-size: auto 100%;
+      }
+      .post-person {
+        margin-left: 0.4rem;
+        .name {
+          font-weight: 700;
+          font-size: 1.1rem;
+          color: $pagepurple;
+        }
+        .date {
+          font-size: 0.5rem;
+          color: $textgraylight;
+        }
+      }
+    }
+    .exclmation {
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 50%;
+      background: $pagered;
+      color: white;
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+    }
+  }
+  .post-body {
+    display: flex;
+    p {
+      flex: 1;
+      font-size: 0.8rem;
+      color: $textgraydark;
+    }
+    div {
+      display: grid;
+      place-items: center;
+      font-size: 1.75rem;
+      cursor: pointer;
+      color: $textgraydark;
+      height: 2.5rem;
+      width: 2.5rem;
+      border-radius: 50%;
+    }
+    div:hover {
+      opacity: 0.75;
+      background-color: #e8eff7;
+    }
+    div:active {
+      opacity: 0.4;
+    }
+  }
+  .post-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.3rem;
+    align-items: center;
+    .platform {
+      height: 1.3rem;
+      display: flex;
+      background-color: #dfdfdf;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 1rem;
+      padding: 0.2rem;
+      padding-left: 0.4rem;
+      div {
+        height: 1.2rem;
+        width: 1.2rem;
+        display: grid;
+        place-items: center;
+      }
+      p {
+        margin-left: 0.3rem;
+        display: grid;
+        place-items: center;
+        font-size: 0.55rem;
+        margin-right: 0.4rem;
+      }
+    }
+  }
+}
+
+.post-svgs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  div {
+    display: grid;
+    place-items: center;
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 50%;
+    background: #f3f3f3;
+    margin-left: 0.7rem;
+    cursor: pointer;
+  }
+  div:hover {
+    background: #d3d2d2;
+    opacity: 0.75;
+  }
+  div:active {
+    opacity: 0.4;
+  }
+}
+.right-data {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .post-topleft {
+    display: flex;
+    .post-img {
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      background-image: url("https://assets.teenvogue.com/photos/5b437a59330f9550cdec8636/16:9/w_2560%2Cc_limit/lede.jpg");
+      background-position: center;
+      background-size: auto 100%;
+    }
+    .post-person {
+      margin-left: 0.4rem;
+      .name {
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: $pagepurple;
+      }
+      .date {
+        font-size: 0.5rem;
+        color: $textgraylight;
+      }
+    }
+  }
+  .right-upper-data {
+    padding-top: 0.7rem;
+    font-size: 0.8rem;
+    color: $textgraydark;
+  }
+  .right-img {
+    margin-top: 1rem;
+    height: 200px;
+    width: 100%;
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/08/05/29/surgery-1807541_1280.jpg");
+    background-size: auto 100%;
+    background-position: center;
+    border-radius: 1rem;
+  }
+  .right-bottomtop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .post-svgs2 {
+      margin-top: 0.5rem;
+    }
+    .post-bottom-topleft {
+      display: flex;
+      margin-top: 1rem;
+    }
+    .post-img {
+      height: 2.3rem;
+      width: 2.3rem;
+      border-radius: 50%;
+      background-image: url("https://assets.teenvogue.com/photos/5b437a59330f9550cdec8636/16:9/w_2560%2Cc_limit/lede.jpg");
+      background-position: center;
+      background-size: auto 100%;
+    }
+    .post-person {
+      margin-left: 0.4rem;
+      .name {
+        font-weight: 700;
+        font-size: 1rem;
+        color: black;
+      }
+      .date {
+        font-size: 0.5rem;
+        color: $textgraylight;
+      }
+    }
+  }
+  .right-lowerdata {
+    padding-top: 0.7rem;
+    font-size: 0.8rem;
+    color: $textgraydark;
+  }
+}
+
+.right-form {
+  margin-top: 1rem;
+  margin-bottom: 0.7rem;
+  width: 93%;
+  display: flex;
+  padding: 0.3rem;
+  border: 1.5px solid $textgraylight;
+  border-radius: 0.4rem;
+  input {
+    width: 100%;
+    border: none;
+  }
+  span {
+    cursor: pointer;
+  }
+
+  span:hover {
+    opacity: 0.75;
+  }
+  span:active {
+    opacity: 0.4;
+  }
+}
+.right-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.bottom-left-buttons {
+  display: flex;
+  justify-content: space-between;
+  .button {
+    background-color: #ececec;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+    font-size: 0.8rem;
+    display: flex;
+    width: 45px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  .button:hover {
+    opacity: 0.75;
+  }
+  .button:active {
+    opacity: 0.4;
+  }
+  .like {
+    color: $pageblue;
+    margin-right: 0.5rem;
+  }
+  .ban {
+    color: $pagered;
+  }
+}
+.bottom-right-buttons {
+  margin-right: 0.7rem;
+  background-color: $pagelightgreen;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  padding-right: 0.4rem;
+  padding-left: 0.4rem;
+  font-size: 0.7rem;
+  display: flex;
+  width: 45px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-right-buttons:hover {
+  opacity: 0.75;
+}
+.bottom-right-buttons:active {
+  opacity: 0.4;
+}
+
+.innerflex-upper {
+  margin-top: 1.75rem;
+  flex: 0.1;
+  display: flex;
+  align-items: center;
+
+  margin-right: 2.5rem;
+}
+.upperbox {
+  height: 50px;
+  width: 150px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 0.7rem;
+  border-radius: 0.4rem;
+  box-shadow: 2px 2px 4px rgba(154, 152, 152, 0.25),
+    -2px 2px 4px rgba(154, 152, 152, 0.25);
+  .upperbox-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    p {
+      font-size: 0.65rem;
+      color: $textgraydark;
+    }
+    .upperbox-number {
+      font-size: 1rem;
+      font-weight: 700;
+      color: black;
+    }
+  }
+  .upperbox-right {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: grid;
+    font-size: 1.4rem;
+    font-weight: 700;
+    place-items: center;
+    color: white;
+    div {
+      height: 2.5rem;
+      width: 2.5rem;
+
+      display: grid;
+      place-items: center;
+    }
+  }
+}
+
+.upper-left-drop {
+  display: flex;
+  font-weight: 700;
+  .upper-dropdown {
+    margin-left: 0.5rem;
+    padding: 0.3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+cursor: pointer;
+    border-radius: 0.4rem;
+    background-color: white;
+    font-size: 0.65rem;
+    color: $textgraydark;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 4px rgba(154, 152, 152, 0.25),
+      -2px 2px 4px rgba(154, 152, 152, 0.25);
+  }
+  .upper-dropdown:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25),
+      -2px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+.upper-dropdown:active {
+  opacity: 0.4;
+
+  }
+}
