@@ -1110,7 +1110,7 @@ body {
   height: 200px;
   width: 100%;
   background-image: url("https://cdn.pixabay.com/photo/2016/11/08/05/29/surgery-1807541_1280.jpg");
-  background-size: auto 100%;
+  background-size: cover;
   background-position: center;
   border-radius: 1rem;
 }
